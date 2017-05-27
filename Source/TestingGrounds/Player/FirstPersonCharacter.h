@@ -1,12 +1,10 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 #pragma once
 #include "GameFramework/Character.h"
-#include "TestingGroundsCharacter.generated.h"
 
 class UInputComponent;
 
 UCLASS(config=Game)
-class ATestingGroundsCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -43,7 +41,6 @@ class ATestingGroundsCharacter : public ACharacter
 	class UMotionControllerComponent* L_MotionController;
 
 public:
-	ATestingGroundsCharacter();
 
 protected:
 	virtual void BeginPlay();
@@ -63,7 +60,6 @@ public:
 
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category=Projectile)
-	TSubclassOf<class ATestingGroundsProjectile> ProjectileClass;
 
 	/** Sound to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
