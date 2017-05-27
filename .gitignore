@@ -41,6 +41,9 @@
 *.VC.db
 *.VC.opendb
 
+# Ignore built map data
+*_BuiltData.uasset
+
 # Precompiled Assets
 SourceArt/**/*.png
 SourceArt/**/*.tga
@@ -68,3 +71,4 @@ Plugins/**/Intermediate*
 # Cache files for the editor to use
 DerivedDataCache/*
 Plugins/**/DerivedDataCache*
+Content/Levels/FirstPersonExampleMap_BuiltData.uasset
