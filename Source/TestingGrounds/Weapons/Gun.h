@@ -27,6 +27,8 @@ public:
 	/** Fires a projectile. */
 	void OnFire();
 
+	FORCEINLINE void SetAnimInstance(class UAnimInstance* Instance) { this->AnimInstance = Instance; };
+
 protected:
 
 	/** Projectile class to spawn */
@@ -54,6 +56,6 @@ protected:
 	FVector GunOffset;
 
 	/** Anim instance of the gun user*/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+	UPROPERTY(BlueprintReadOnly, Category = Animation)
 	class UAnimInstance* AnimInstance;
 };

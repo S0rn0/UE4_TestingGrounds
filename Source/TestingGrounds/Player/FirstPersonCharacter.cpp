@@ -81,6 +81,10 @@ void AFirstPersonCharacter::BeginPlay()
 			if (Gun)
 			{
 				Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
+				if (Mesh1P)
+				{
+					Gun->SetAnimInstance(Mesh1P->GetAnimInstance());
+				}
 			}
 		}
 	}
