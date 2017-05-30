@@ -25,6 +25,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	/** Fires a projectile. */
+	UFUNCTION(BlueprintCallable, Category = "Gun")
 	void OnFire();
 
 	FORCEINLINE void SetAnimInstance(class UAnimInstance* Instance) { this->AnimInstance = Instance; };
